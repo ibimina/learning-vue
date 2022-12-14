@@ -1,13 +1,50 @@
-@import './base.css';
-
-
+@import "./base.css";
+header{
+  padding: 1em;
+}
+.count{
+  font-size: 30px;
+  font-weight: 700;
+}
+.template-refs,.home-container {
+  text-align: center;
+}
+.btn{
+  cursor: pointer;
+  padding: 1em 3em;
+}
+.btn:disabled{
+  background-color: rgb(136, 139, 139);
+}
+h1{
+  margin: 1em 0;
+}
 a,
+.mouse-wrapper {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+}
 .green {
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
 }
-
+.mouse-event {
+  font-size: 34px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 700;
+}
+button{
+  padding: 1em .5em;
+  border: 0;
+  border-radius: 8px;
+  background-color: rgb(6, 27, 27);
+  color: aqua;
+}
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
