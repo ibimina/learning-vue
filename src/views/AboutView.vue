@@ -1,18 +1,6 @@
-<script>
-export default {
-  data() {
-    return { text: "mouse events" };
-  },
-  methods: {
-    handlemouse(word) {
-      this.$ref.events.textContent = word;
-    },
-  },
-};
-</script>
 <template>
   <div class="about">
-    <h1>Event listeners</h1>
+    <h1>Event listeners using template refs</h1>
     <p>{{ text }}</p>
     <p ref="events">hi</p>
     <button @mousedown="handlemouse('mouse down')">mouse down</button>
@@ -22,3 +10,16 @@ export default {
     <button @mousemove="handlemouse('mouse move')">mouse move</button>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return { text: "mouse events" };
+  },
+  methods: {
+    handlemouse(word) {
+      this.$refs.events.textContent = word;
+    },
+  },
+};
+</script>
