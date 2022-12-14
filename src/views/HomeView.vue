@@ -17,8 +17,12 @@ export default {
 </script>
 
 <template>
-  <h1>Counter</h1>
-  <p>{{ count }}</p>
-  <button @click="increment">+</button>
-  <button @click="decrement" :disabled="count < 1">-</button>
+  <div class="home-container">
+    <h1>Counter</h1>
+    <p class="count">{{ count }}</p>
+    <div class="mouse-wrapper">
+      <button @click="increment" class="btn">+</button>
+      <button @click="decrement" :disabled="count < 1" class="btn">-</button>
+    </div>
+  </div>
 </template>
